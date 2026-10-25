@@ -4,6 +4,30 @@
 
 A tool for generating NixOS [disko](https://github.com/nix-community/disko) configurations from existing system partitions.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+  - [From Source (Python)](#from-source-python)
+  - [With Nix (Recommended)](#with-nix-recommended)
+- [Usage](#usage)
+  - [Basic Usage](#basic-usage)
+  - [With Sudo](#with-sudo)
+  - [LUKS Key Configuration](#luks-key-configuration)
+  - [Skip Prompts](#skip-prompts)
+- [Example Output](#example-output)
+- [Customization](#customization)
+- [Requirements](#requirements)
+  - [Runtime Dependencies](#runtime-dependencies)
+  - [Optional (for full detection)](#optional-for-full-detection)
+- [Project Structure](#project-structure)
+- [Development](#development)
+  - [Running from Source](#running-from-source)
+  - [Building with Nix](#building-with-nix)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
 ## Overview
 
 This tool analyzes your system's storage configuration and generates a valid NixOS disko configuration that mirrors your current setup. This is particularly useful for:
